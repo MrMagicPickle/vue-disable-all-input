@@ -4,13 +4,10 @@
   "description": "",
   "author": "",
   "scripts": {
-    "test:unit": "vue-cli-service test:unit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "index.js",
   "devDependencies": {
-    "@vue/cli-plugin-unit-jest": "~4.5.0",
-    "@vue/test-utils": "^1.0.3"
   },
   "bugs": {
     "url": "https://github.com/MrMagicPickle/vue-disable-all-input/issues"
