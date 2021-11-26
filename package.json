@@ -1,14 +1,13 @@
 {
   "name": "vue-disable-all-input",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "src/index.js",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "bugs": {
     "url": "https://github.com/MrMagicPickle/vue-disable-all-input/issues"
   },
