@@ -1,15 +1,14 @@
 const disableAllInput = () => {
   return {
     componentUpdated: function(el, binding) {
-      if (!binding.value) {
-        return;
-      }
-      const tags = ["input", "button", "textarea", "select", '[contenteditable=true]'];
+      const tags = ['input', 'button', 'textarea', 'select', '[contenteditable]'];
       tags.forEach(tagName => {
         const nodes = el.querySelectorAll(tagName);
         for (let i = 0; i < nodes.length; i++) {
-          nodes[i].disabled = true;
-          nodes[i].tabIndex = -1;
+          nodes[i].disabled = binding.value;
+          if (nodes[i].tagName === 'DIV') {
+            nodes[i].setAttribute('contenteditable', binding.value ? false : true);
+          }
         }
       });
     }
@@ -20,7 +19,7 @@ const plugin = {
   install (Vue) {
     Vue.directive('disable-all-input', disableAllInput())
   },
-  directive: disableAllInput()
+  directive: disableAllInput(),
 }
 
 export default plugin;
