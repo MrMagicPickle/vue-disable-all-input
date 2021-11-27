@@ -22,7 +22,7 @@ import VueDisableAllInput from 'vue-disable-all-input'
 Vue.use(VueDisableAllInput)
 ```
 
-Add `v-disable-all-input` as an attribute on the parent element containing children input elements that you wish to disable/enable
+Add `v-disable-all-input` as an attribute to the parent element containing children input elements that you wish to disable/enable
 
 ```vue
 <template>
