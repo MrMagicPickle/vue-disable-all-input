@@ -9,26 +9,26 @@
       <label>
         Text input
       </label>
-      <input type="text"/>
+      <input class="text-input" type="text"/>
 
       <label>
         Checkbox input
       </label>
-      <input type="checkbox"/>
+      <input class="checkbox-input" type="checkbox"/>
 
-      <button>
+      <button class="button-input">
         Button Input
       </button>
 
       <div class="child">
-        <div contenteditable="true">
+        <div class="edit-div" contenteditable="true">
           ContentEditable Input
         </div>
 
         <label>
-          Checkbox input
+          TextArea input
         </label>
-        <input type="textarea"/>
+        <input class="textarea-input" type="textarea"/>
 
       </div>
     </div>
