@@ -1,4 +1,10 @@
-# vue-sticky-scroll
+# vue-disable-all-input
+
+A VueJs directive that allows you to disable/enable all input elements under a parent element
+
+
+You may run into a scenario where you would want all input elements in a specific section to be disabled together. For example, clicking a button should disable all input elements in a form. In this case, instead of manually setting the disable attribute for each input element, you can bind `v-disable-all-input` to the container element and simply toggle that flag instead.
+
 
 ## Install
 ```bash
